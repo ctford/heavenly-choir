@@ -42,6 +42,7 @@ function note(event, context) {
             response = speak(audio(asset('G')));
             break;
         case 'root':
+        case 'rude':
         case '1st':
             response = speak(audio(asset('root')));
             break;
@@ -67,6 +68,7 @@ function note(event, context) {
             response = speak(audio(asset('C')));
             break;
         case '4th':
+        case '4':
         case 'subdominant':
             response = speak(audio(asset('fourth')));
             break;
