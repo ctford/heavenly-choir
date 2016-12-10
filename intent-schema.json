@@ -1,11 +1,11 @@
 {
     "intents": [
         {
-            "intent": "GetMidi",
+            "intent": "GetNote",
             "slots": [
                 {
-                    "name": "Midi",
-                    "type": "AMAZON.NUMBER"
+                    "name": "Note",
+                    "type": "SOLFEGE"
                 }
             ]
         }

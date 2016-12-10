@@ -1,7 +1,7 @@
-GetMidi sing {Midi}
-GetMidi sing me {Midi}
-GetMidi sing me a {Midi}
-GetMidi play {Midi}
-GetMidi play me {Midi}
-GetMidi play me a {Midi}
-GetMidi give me a {Midi}
+GetNote sing {Note}
+GetNote sing me {Note}
+GetNote sing me a {Note}
+GetNote play {Note}
+GetNote play me {Note}
+GetNote play me a {Note}
+GetNote give me a {Note}
