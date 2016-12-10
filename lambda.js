@@ -7,19 +7,54 @@ function authorise(event, context) {
     }
 }
 
-// Construct an SSML response playing a single note.
-function note(event, context) {
-    var syllable = event.request.intent.slots.Note.value;
+// Construct an SSML response.
+function speak(contents) {
     return '<speak>'
-        +      syllable
+        +      contents
         +  '</speak>';
+}
+
+// Construct an SSML audio tag.
+function audio(url) {
+    return '<audio src="' + url + '" />';
 }
 
 // Construct an SSML response playing a greeting.
 function hello(event, context) {
-    return '<speak>'
-        +      '<audio src="https://raw.githubusercontent.com/ctford/heavenly-choir/assets/choir/hello.mp3" />'
-        +  '</speak>';
+    return speak(audio("https://raw.githubusercontent.com/ctford/heavenly-choir/assets/choir/hello.mp3"));
+}
+
+// Construct an SSML response playing a single note as defined in the SOLFEGE type.
+function note(event, context) {
+    var syllable = event.request.intent.slots.Note.value;
+
+    switch (syllable) {
+        case 'do':
+            response = speak('A deer, a female deer.');
+            break;
+        case 're':
+            response = speak('A drop of golden sun.');
+            break;
+        case 'mi':
+            response = speak('The name I call myself.');
+            break;
+        case 'fa':
+            response = speak('A long long way to run.');
+            break;
+        case 'so':
+            response = speak('A needle pulling thread.');
+            break;
+        case 'la':
+            response = speak('A note to follow So.');
+            break;
+        case 'ti':
+            response = speak('A drink with jam and bread.');
+            break;
+        default:
+            response = speak(syllable);
+            break;
+    }
+    return response;
 }
 
 // Switch between different intent responses.
