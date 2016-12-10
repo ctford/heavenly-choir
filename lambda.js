@@ -36,37 +36,38 @@ function note(event, context) {
     switch (syllable) {
         case 'do':
         case 'doe':
-            response = speak('A deer, a female deer.');
+        case 'joke':
+            response = speak(audio(asset('G')));
             break;
         case 're':
         case 'ray':
-            response = speak('A drop of golden sun.');
+            response = speak(audio(asset('A')));
             break;
         case 'mi':
         case 'me':
         case 'mean':
-            response = speak('The name I call myself.');
+            response = speak(audio(asset('B')));
             break;
         case 'fa':
         case 'far':
         case 'fart':
-            response = speak('A long long way to run.');
+            response = speak(audio(asset('C')));
             break;
         case 'so':
         case 'sew':
         case 'sewn':
-            response = speak('A needle pulling thread.');
+            response = speak(audio(asset('D')));
             break;
         case 'la':
         case 'lah':
         case 'laugh':
-            response = speak('A note to follow So.');
+            response = speak(audio(asset('E')));
             break;
         case 'ti':
         case 'tea':
         case 'TV':
         case 'e':
-            response = speak('A drink with jam and bread.');
+            response = speak(audio(asset('F')));
             break;
         default:
             response = speak('Sorry, I didn\'t get that. I heard <break/>' + syllable + '.');
