@@ -1,11 +1,11 @@
 {
   "name": "heavenly-choir",
   "version": "1.0.0",
-  "description": "",
+  "description": "An unearthly Alexa musical skill.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "Chris Ford",
+  "license": "MIT"
 }
