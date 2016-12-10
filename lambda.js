@@ -37,10 +37,13 @@ function note(event, context) {
         case 'do':
         case 'doe':
         case 'joke':
+        case 'dove':
+        case 'don\'t':
             response = speak(audio(asset('G')));
             break;
         case 're':
         case 'ray':
+        case 'ready':
             response = speak(audio(asset('A')));
             break;
         case 'mi':
@@ -56,6 +59,7 @@ function note(event, context) {
         case 'so':
         case 'sew':
         case 'sewn':
+        case 'slow':
             response = speak(audio(asset('D')));
             break;
         case 'la':
@@ -66,7 +70,8 @@ function note(event, context) {
         case 'ti':
         case 'tea':
         case 'TV':
-        case 'e':
+        case 'E':
+        case 'V':
             response = speak(audio(asset('F')));
             break;
         default:
