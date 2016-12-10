@@ -106,11 +106,6 @@ exports.handler = function (event, context) {
                     type: 'SSML',
                     ssml: respond(event, context)
                 },
-                card: {
-                    type: 'Simple',
-                    title: 'Heavenly Choir',
-                    content: 'I heard "' + event.request.intent.slots.Note.value + '".'
-                },
                 shouldEndSession: true
             }
         });
