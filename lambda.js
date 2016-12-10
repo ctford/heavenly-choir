@@ -111,7 +111,7 @@ exports.handler = function (event, context) {
                     type: 'SSML',
                     ssml: respond(event, context)
                 },
-                shouldEndSession: true
+                shouldEndSession: false
             }
         });
     } catch (e) {
