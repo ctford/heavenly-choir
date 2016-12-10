@@ -1,0 +1,13 @@
+{
+    "intents": [
+        {
+            "intent": "GetMidi",
+            "slots": [
+                {
+                    "name": "Midi",
+                    "type": "AMAZON.NUMBER"
+                }
+            ]
+        }
+    ]
+}

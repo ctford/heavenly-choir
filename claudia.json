@@ -1,0 +1,7 @@
+{
+  "lambda": {
+    "role": "heavenly-choir-executor",
+    "name": "heavenly-choir",
+    "region": "eu-west-1"
+  }
+}

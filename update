@@ -1,0 +1,2 @@
+#!/bin/sh
+claudia update --profile heavenly-choir
