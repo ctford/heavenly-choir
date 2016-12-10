@@ -17,3 +17,22 @@ GetNote give me a {Note}
 GetNote give me the {Note}
 GetNote to give me a {Note}
 GetNote to give me the {Note}
+GetNote sing {Note} chord
+GetNote to sing {Note} chord
+GetNote sing me {Note} chord
+GetNote to sing me {Note} chord
+GetNote sing me a {Note} chord
+GetNote sing me the {Note} chord
+GetNote to sing me a {Note} chord
+GetNote to sing me the {Note} chord
+GetNote play {Note} chord
+GetNote to play {Note} chord
+GetNote play me {Note} chord
+GetNote to play me {Note} chord
+GetNote play me a {Note} chord
+GetNote play me the {Note} chord
+GetNote to play me a {Note} chord
+GetNote give me a {Note} chord
+GetNote give me the {Note} chord
+GetNote to give me a {Note} chord
+GetNote to give me the {Note} chord
