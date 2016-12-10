@@ -26,7 +26,7 @@ function asset(name) {
 
 // Construct an SSML response playing a greeting.
 function hello(event, context) {
-    return speak(audio(asset('hello')));
+    return speak(audio(asset('root')));
 }
 
 // Construct an SSML response playing a single note as defined in the SOLFEGE type.
@@ -41,20 +41,34 @@ function note(event, context) {
         case 'don\'t':
             response = speak(audio(asset('G')));
             break;
+        case 'root':
+        case '1st':
+            response = speak(audio(asset('root')));
+            break;
         case 're':
         case 'ray':
         case 'ready':
             response = speak(audio(asset('A')));
+            break;
+        case 'second':
+            response = speak(audio(asset('second')));
             break;
         case 'mi':
         case 'me':
         case 'mean':
             response = speak(audio(asset('B')));
             break;
+        case '3rd':
+            response = speak(audio(asset('third')));
+            break;
         case 'fa':
         case 'far':
         case 'fart':
             response = speak(audio(asset('C')));
+            break;
+        case '4th':
+        case 'subdominant':
+            response = speak(audio(asset('fourth')));
             break;
         case 'so':
         case 'sew':
@@ -62,17 +76,27 @@ function note(event, context) {
         case 'slow':
             response = speak(audio(asset('D')));
             break;
+        case '5th':
+        case 'dominant':
+            response = speak(audio(asset('fifth')));
+            break;
         case 'la':
         case 'lah':
         case 'laugh':
             response = speak(audio(asset('E')));
+            break;
+        case '6th':
+            response = speak(audio(asset('sixth')));
             break;
         case 'ti':
         case 'tea':
         case 'TV':
         case 'E':
         case 'V':
-            response = speak(audio(asset('F')));
+            response = speak(audio(asset('F-sharp')));
+            break;
+        case '7th':
+            response = speak(audio(asset('seventh')));
             break;
         default:
             response = speak('Sorry, I didn\'t get that. I heard <break/>' + syllable + '.');

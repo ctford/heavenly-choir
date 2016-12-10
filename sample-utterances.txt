@@ -3,12 +3,17 @@ GetNote to sing {Note}
 GetNote sing me {Note}
 GetNote to sing me {Note}
 GetNote sing me a {Note}
+GetNote sing me the {Note}
 GetNote to sing me a {Note}
+GetNote to sing me the {Note}
 GetNote play {Note}
 GetNote to play {Note}
 GetNote play me {Note}
 GetNote to play me {Note}
 GetNote play me a {Note}
+GetNote play me the {Note}
 GetNote to play me a {Note}
 GetNote give me a {Note}
+GetNote give me the {Note}
 GetNote to give me a {Note}
+GetNote to give me the {Note}
