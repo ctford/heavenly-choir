@@ -5,7 +5,9 @@ exports.handler = function (event, context) {
             response: {
                 outputSpeech: {
                     type: 'SSML',
-                    ssml: '<speak>Hello from the Heavenly Choir.</speak>'
+                    ssml: '<speak>'
+                        +     '<audio src="https://raw.githubusercontent.com/ctford/heavenly-choir/assets/choir/hello.mp3" />'
+                        + '</speak>'
                 },
                 shouldEndSession: true
             }
