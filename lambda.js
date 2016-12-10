@@ -1,5 +1,14 @@
+var APP_ID = 'amzn1.ask.skill.e1fd8ae3-01c5-48f2-a3b4-5c6bcdef9d26';
+
+function authorise(event, context) {
+    if (event.session.application.applicationId !== APP_ID) {
+        throw 'Invalid applicationId: ' + event.session.application.applicationId;
+    }
+}
+
 exports.handler = function (event, context) {
     try {
+        authorise(event, context);
         context.succeed({
             version: '1.0',
             response: {
