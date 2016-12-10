@@ -1,2 +1,0 @@
-#!/bin/sh
-claudia create --region eu-west-1 --handler lambda.handler --profile heavenly-choir

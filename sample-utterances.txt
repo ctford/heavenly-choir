@@ -1,7 +1,0 @@
-GetMidi sing {Midi}
-GetMidi sing me {Midi}
-GetMidi sing me a {Midi}
-GetMidi play {Midi}
-GetMidi play me {Midi}
-GetMidi play me a {Midi}
-GetMidi give me a {Midi}

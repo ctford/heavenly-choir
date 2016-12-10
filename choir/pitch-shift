@@ -1,0 +1,18 @@
+#!/bin/sh
+
+sox C.mp3 G.mp3 pitch -500
+sox C.mp3 A.mp3 pitch -300
+sox C.mp3 B.mp3 pitch -100
+# C.mp3
+sox C.mp3 D.mp3 pitch 200
+sox C.mp3 E.mp3 pitch 400
+sox C.mp3 F-sharp.mp3 pitch 600
+
+# Chords
+sox -m G.mp3 B.mp3 D.mp3       root.mp3
+sox -m A.mp3 C.mp3 E.mp3       second.mp3
+sox -m B.mp3 D.mp3 F-sharp.mp3 third.mp3
+sox -m G.mp3 C.mp3 E.mp3       fourth.mp3
+sox -m A.mp3 D.mp3 F-sharp.mp3 fifth.mp3
+sox -m G.mp3 B.mp3 E.mp3       sixth.mp3
+sox -m B.mp3 D.mp3 F-sharp.mp3 seventh.mp3
