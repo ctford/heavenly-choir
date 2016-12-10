@@ -59,7 +59,7 @@ function note(event, context) {
             break;
         case 'ti':
         case 'tea':
-        case 'tv':
+        case 'TV':
         case 'e':
             response = speak('A drink with jam and bread.');
             break;
@@ -99,6 +99,11 @@ exports.handler = function (event, context) {
                 outputSpeech: {
                     type: 'SSML',
                     ssml: respond(event, context)
+                },
+                card: {
+                    type: 'Simple',
+                    title: 'Heavenly Choir',
+                    content: 'I heard "' + event.request.intent.slots.Note.value + '".'
                 },
                 shouldEndSession: true
             }
