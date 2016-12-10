@@ -20,8 +20,13 @@ function audio(url) {
 }
 
 // Construct an SSML response playing a greeting.
+function asset(name) {
+    return 'https://raw.githubusercontent.com/ctford/heavenly-choir/assets/choir/' + name + '.mp3';
+}
+
+// Construct an SSML response playing a greeting.
 function hello(event, context) {
-    return speak(audio("https://raw.githubusercontent.com/ctford/heavenly-choir/assets/choir/hello.mp3"));
+    return speak(audio(asset('hello')));
 }
 
 // Construct an SSML response playing a single note as defined in the SOLFEGE type.
